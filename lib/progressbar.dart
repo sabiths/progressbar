@@ -63,7 +63,9 @@ class ProgressBar extends StatelessWidget {
         showValue == true
             ? Container(
                 child: Text(
-                "$fillValue/$totalValue",
+                (showinPercentage == true
+                    ? (fillValue * 100 / totalValue).toString() + "%"
+                    : "$fillValue/$totalValue"),
                 style: TextStyle(color: Colors.white.withOpacity(0.8)),
               ))
             : Container(),
