@@ -13,6 +13,6 @@ ProgressBar(
   height: 20,
   showValue: true,
   showinPercentage: true,
-                      )
+ )
 ```
 
